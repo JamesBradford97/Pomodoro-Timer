@@ -1,0 +1,81 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../img/IMG_1203.JPG'); 
+    background-size: cover;
+    color: white;
+    font-size: 20px;
+    font-family: 'Orbitron','Helvetica';
+}
+#main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: rgba(250, 250, 250, 0.3) 5px 5px;
+}
+#options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: white solid 2px;
+}
+.options{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+.options:hover{
+    color: goldenrod;
+    cursor: grab;
+    border-left: goldenrod solid 2px;
+    
+}
+.options>p{
+    margin: 0;
+}
+#timer{
+    width: 100%;
+    border-bottom: 2px solid white;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#time_count{
+    font-size: 70px;
+    font-weight: bold;
+}
+#controls{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#controls>div{
+    text-align: center;
+    width: 100%;
+}
+#start:hover{
+    background-color: green;
+    color: white;
+    cursor: grab;
+}
+#stop:hover{
+    color: white;
+    background-color: maroon;
+    cursor: grab;
+}
+#stop{
+    display: none;
+}
